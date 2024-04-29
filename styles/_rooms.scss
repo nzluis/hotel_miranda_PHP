@@ -1,0 +1,137 @@
+.rooms {
+    text-align: center;
+
+    h5 {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: #777777;
+    }
+
+    h1 {
+        font-size: 56px;
+        font-weight: 400;
+        font-family: Old Standard TT, sans-serif;
+        margin: 24px 0;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 75px;
+        }
+    }
+
+    &__icons {
+        background-color: white;
+        height: 29px;
+        max-width: 75%;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 1000px) {
+            max-width: 310px;
+        }
+
+        img {
+            vertical-align: middle;
+
+            &:not(:nth-last-of-type(7)) {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    &__slider {
+        position: relative;
+        height: 244px;
+        width: 100%;
+        background-color: #E5E5E5;
+        top: -14px;
+        z-index: -1;
+
+        background-size: cover;
+
+        &--left,
+        &--right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1000;
+            width: 32px;
+            height: 32px;
+        }
+
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            width: 770px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__description {
+
+        padding: 19px 24px;
+        margin: auto 20px;
+        position: relative;
+        top: -35px;
+        background-color: #FFFFFF;
+
+        @media only screen and (min-width: 1000px) {
+            max-width: 640px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                max-width: 60%;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-weight: 700;
+                margin-right: 15px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        h4 {
+            font-family: Old Standard TT, sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: -1.2px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777777;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #BEAD8E;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}

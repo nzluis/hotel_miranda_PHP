@@ -1,0 +1,146 @@
+.rooms_grid {
+    margin: 48px 20px 30px 20px;
+
+    @media only screen and (min-width: 1000px) {
+        margin: 110px auto 0px auto;
+        width: calc(80% - 10px);
+        max-width: 1170px;
+
+    }
+
+    &__wrapper {
+
+        display: flex;
+        overflow: hidden;
+        text-align: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            min-width: 100%;
+
+            @media only screen and (min-width: 1000px) {
+                min-width: unset;
+                width: 370px;
+            }
+
+
+            .item_slider {
+                position: relative;
+                height: 230px;
+                width: 100%;
+                background-size: contain;
+
+            }
+
+            .item_description {
+
+                position: relative;
+                background-color: #FFFFFF;
+                // padding-bottom: 24px;
+
+                @media only screen and (min-width: 1000px) {
+
+                    h3 {
+                        font-size: 40px;
+                        font-weight: 700;
+                        margin-right: 15px;
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                &__icons {
+                    background-color: white;
+                    display: flex;
+                    justify-content: space-evenly;
+                    position: relative;
+                    top: -20px;
+                    margin: 0 40px;
+                    padding: 12px 0;
+
+
+                    @media only screen and (min-width: 1000px) {
+                        // max-width: 310px;
+                    }
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+
+                &__text {
+                    margin: 0 20px;
+
+                }
+
+                h4 {
+                    font-family: Old Standard TT, sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    letter-spacing: -0.7px;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #777777;
+                    margin-bottom: 12px;
+                }
+
+                h3 {
+                    font-family: Archivo, sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #BEAD8E;
+                    display: inline;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                h6 {
+                    font-family: Archivo, sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #BDBDBD;
+                    display: inline;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 24px auto 0 auto;
+
+
+        @media only screen and (min-width: 1000px) {
+            margin-top: 58px;
+        }
+
+        &>* {
+            font-family: Oswald;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        p:nth-child(3) {
+            background-color: #BEAD8E;
+            color: white;
+        }
+
+    }
+}

@@ -1,0 +1,107 @@
+.navbar {
+
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+        top: 2.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 1420px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (min-width: 1000px) {
+            height: 90px;
+        }
+
+        &__button_menu {
+            @media only screen and (min-width: 1000px) {
+                display: none
+            }
+        }
+
+        h2 {
+            margin-left: 1em;
+            font-family: Archivo, sans-serif;
+
+            @media only screen and (min-width: 1000px) {
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+
+        h5 {
+            margin-left: 1em;
+            font-family: Archivo, sans-serif;
+
+            @media only screen and (min-width: 1000px) {
+                margin-left: 3em;
+                font-size: 26px;
+                font-weight: 700;
+                letter-spacing: 2.6px;
+
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__right {
+            position: absolute;
+            right: 0;
+            margin-right: 2em;
+        }
+
+        &__right--search {
+            margin-left: 1.5em;
+        }
+
+        &__menu {
+            ul {
+                list-style-type: none;
+                font-family: Archivo, sans-serif;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                display: none;
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                top: 4em;
+                left: 0;
+                padding: 1em;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 1000px) {
+
+                ul {
+                    display: flex;
+                    gap: 1em;
+                    margin-left: 4em;
+
+                    li {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

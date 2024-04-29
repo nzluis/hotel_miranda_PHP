@@ -1,0 +1,30 @@
+.slider {
+    margin: 0px auto;
+    margin-bottom: 60px;
+    width: calc(80% - 10px);
+    max-width: 1170px;
+
+    img {
+        object-fit: cover;
+        object-position: bottom;
+        width: 370px;
+        height: 370px;
+    }
+
+    .swiper {
+        width: 370px;
+        height: 420px;
+
+        @media only screen and (min-width: 1000px) {
+            width: unset;
+            max-width: 1170px;
+
+        }
+
+    }
+
+    .swiper-pagination-bullet-active {
+        transform: scale(1.3);
+        background-color: #BEAD8E;
+    }
+}

@@ -1,0 +1,124 @@
+.facilities {
+    text-align: center;
+
+    h5 {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: #777777;
+        margin-top: 60px;
+
+        @media only screen and (min-width: 1000px) {
+            margin-top: 118px;
+        }
+    }
+
+    h1 {
+        font-size: 56px;
+        font-family: Old Standard TT, sans-serif;
+        font-weight: 400;
+        letter-spacing: -1.2px;
+        margin: 24px 24px 32px 24px;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        overflow: hidden;
+
+        @media only screen and (min-width: 1000px) {
+            display: grid;
+            margin: 61px auto 40px auto;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            max-width: 1170px;
+        }
+    }
+
+    &__grid__card {
+        text-align: left;
+        margin-left: 38px;
+        min-width: 100%;
+
+        @media only screen and (min-width: 1000px) {
+            max-width: 350px;
+            min-width: unset;
+        }
+
+        &__img_container {
+            min-height: 188px;
+            position: relative;
+
+        }
+
+        &--rating {
+            position: absolute;
+            left: 0;
+            bottom: 38px;
+        }
+
+        &--number {
+            position: absolute;
+            top: 0;
+            right: 65px;
+        }
+
+        h3 {
+            font-family: Old Standard TT, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: -0.9;
+            margin-bottom: 28px;
+        }
+
+        p {
+            color: #777777;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            max-width: 75%;
+            margin-bottom: 43px;
+
+            @media only screen and (min-width: 1000px) {
+                margin-bottom: 43px;
+            }
+        }
+    }
+
+    &.dark {
+        background-color: #222222;
+        color: #FFFFFF;
+        padding-bottom: 120px;
+
+        h5 {
+            padding-top: 48px;
+            color: #FFFFFF;
+
+            @media only screen and (min-width: 1000px) {
+                padding-top: 120px;
+            }
+        }
+
+        .dark {
+            margin-bottom: 0;
+        }
+
+        &__grid__card {
+            background-color: #292929;
+        }
+
+        &__grid__card--number {
+            color: white;
+        }
+    }
+
+    &__dots_selection {
+        margin-bottom: 64px;
+
+        @media only screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+}

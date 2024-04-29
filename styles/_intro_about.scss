@@ -1,0 +1,160 @@
+.intro_about {
+    margin: 60px 20px 80px 20px;
+
+    @media only screen and (min-width: 1000px) {
+        margin: 120px auto;
+        width: calc(80% - 10px);
+        max-width: 1170px;
+    }
+
+    &__frame_container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        margin-bottom: 36px;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 67px;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h3 {
+        font-family: Old Standard TT, sans-serif;
+        font-weight: 400;
+        line-height: 40px;
+        font-size: 32px;
+        text-align: center;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 72px;
+            line-height: 88px;
+            letter-spacing: -2.16px;
+        }
+    }
+
+    &__wrap {
+        margin: 50px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media only screen and (max-width: 375px) {
+            justify-content: center;
+
+        }
+
+        @media only screen and (min-width: 1000px) {
+            margin: 73px 0 40px 0;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 157px;
+            height: 157px;
+            gap: 18px;
+
+            @media only screen and (min-width: 1000px) {
+                min-width: 200px;
+                height: 200px;
+
+            }
+
+            &:nth-child(2) {
+                background-color: #BEAD8E;
+
+                p {
+                    color: #FFFFFF;
+                }
+            }
+
+            p {
+                font-family: Archivo, sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 2.4px;
+                color: #222222;
+            }
+        }
+    }
+
+    &__restaurant_container {
+        margin: 20px;
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+            gap: 55px;
+        }
+
+        img {
+            width: 100%;
+
+            @media only screen and (min-width: 1000px) {
+                object-fit: cover;
+            }
+        }
+
+        &__description {
+            h5 {
+                font-family: Archivo, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 2.8px;
+                color: #777777;
+                margin-top: 32px;
+            }
+
+            h2 {
+                font-family: Old Standard TT, sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: -1px;
+                margin: 26px 0;
+
+                @media only screen and (min-width: 1000px) {
+                    font-size: 48px;
+                    line-height: 60px;
+                    letter-spacing: -1.5px;
+                    max-width: 90%;
+                }
+            }
+
+            p {
+                font-family: Archivo, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #777777;
+                margin-bottom: 16px;
+
+                @media only screen and (min-width: 1000px) {
+                    max-width: 85%;
+                }
+            }
+
+            button {
+                padding: 22px 61px;
+            }
+
+        }
+    }
+}

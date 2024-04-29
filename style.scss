@@ -1,0 +1,80 @@
+@use "./styles/margin_top";
+@use "./styles/navbar";
+@use "./styles/header";
+@use "./styles/date_checker";
+@use "./styles/about_us";
+@use "./styles/rooms";
+@use "./styles/intro_video";
+@use "./styles/facilities";
+@use "./styles/menu";
+@use "./styles/slider";
+@use "./styles/stats";
+@use "./styles/footer";
+@use "./styles/intro_about";
+@use "./styles/counter";
+@use "./styles/offers";
+@use "./styles/popular_list";
+@use "./styles/new_details";
+@use "./styles/rooms_grid";
+@use "./styles/room_detail";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: Roboto, sans-serif;
+}
+
+button {
+    padding: 22px 45px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #BEAD8E;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2.5px solid #BEAD8E;
+    box-shadow: 0 0 5px #BEAD8E;
+}
+
+input,
+textarea {
+    border: 2.5px solid transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+}

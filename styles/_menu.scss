@@ -1,0 +1,153 @@
+.menu {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+
+    @media only screen and (min-width: 1000px) {
+        margin: 0px auto 120px auto;
+        width: calc(80% - 10px);
+        max-width: 1170px;
+        overflow: visible;
+        padding: 0;
+    }
+
+    &__doughnut {
+        position: absolute;
+        width: 114px;
+        height: 114px;
+        right: -24px;
+
+        @media only screen and (min-width: 1000px) {
+            width: 229px;
+            height: 229px;
+            left: -294px;
+            top: 0px;
+        }
+    }
+
+    h5 {
+        padding-top: 114px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: #777777;
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 200px;
+        }
+    }
+
+    h1 {
+        font-family: Old Standard TT, sans-serif;
+        font-size: 56px;
+        line-height: 60px;
+        font-weight: 400;
+        letter-spacing: -1.2px;
+    }
+
+    &__slider {
+        margin-top: 32px;
+        display: flex;
+        overflow: hidden;
+
+        @media only screen and (min-width: 1000px) {
+            gap: 5px;
+        }
+
+
+        &__container {
+            min-width: 100%;
+
+            @media only screen and (min-width: 1000px) {
+                min-width: unset;
+
+                &__item:hover {
+                    background-color: #222222;
+                    color: #FFFFFF;
+                }
+            }
+
+            &__item {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 16px;
+                cursor: pointer;
+
+                @media only screen and (min-width: 1000px) {
+                    align-items: center;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0px;
+                    }
+                }
+
+
+                img {
+                    object-fit: cover;
+                    object-position: bottom;
+                    width: 120px;
+                    height: 120px;
+                    background-color: #EDEDED;
+
+                }
+
+                &__description {
+                    width: 50%;
+
+                    @media only screen and (min-width: 1000px) {}
+
+                    margin-bottom: unset;
+
+                    h3 {
+                        font-family: Old Standard TT, sans-serif;
+                        font-size: 24px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        letter-spacing: -0.72px;
+                        margin-bottom: 12px;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        text-align: right;
+        margin-top: 24px;
+        margin-bottom: 60px;
+
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            top: 92px;
+            right: 0;
+        }
+
+        &__left,
+        &__right {
+            width: 36px;
+            height: 36px;
+
+            @media only screen and (min-width: 1000px) {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        &__left {
+            background-color: #F8F8F8;
+            color: #11111158;
+        }
+
+        &__right {
+            margin-left: 16px;
+        }
+    }
+}

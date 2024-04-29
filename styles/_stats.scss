@@ -1,0 +1,45 @@
+.stats {
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 48px 83px;
+
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 80px;
+        margin: 0 auto;
+        width: calc(80% - 10px);
+        max-width: 1170px;
+    }
+
+    &__card {
+        font-weight: 700;
+
+        img {
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 60px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        h5 {
+            font-size: 16px;
+            color: #999999;
+        }
+
+        &:not(:nth-child(1)) {
+            margin-top: 60px;
+
+            @media only screen and (min-width: 1000px) {
+                margin-top: unset;
+            }
+        }
+    }
+}
