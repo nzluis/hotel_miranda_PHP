@@ -883,6 +883,11 @@
   width: calc(80% - 10px);
   max-width: 1170px;
 }
+@media only screen and (max-width: 1000px) {
+  .slider {
+    width: unset;
+  }
+}
 .slider img {
   object-fit: cover;
   object-position: bottom;
@@ -1916,32 +1921,6 @@
 .rooms_grid__pagination p:nth-child(3) {
   background-color: #BEAD8E;
   color: white;
-}
-
-ul {
-  list-style-type: none;
-  list-style-position: inside;
-  column-count: 2;
-  column-gap: 10px;
-}
-ul :nth-child(5),
-ul :nth-child(10) {
-  margin-bottom: 25px;
-}
-ul li {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-family: 15px;
-  line-height: 17px;
-  color: #777777;
-  white-space: nowrap;
-  margin-bottom: 17px;
-}
-ul img {
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
 }
 
 * {

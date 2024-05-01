@@ -1,4 +1,7 @@
 .slider {
+    @media only screen and (max-width: 1000px) {
+        width: unset;
+    }
     margin: 0px auto;
     margin-bottom: 60px;
     width: calc(80% - 10px);
