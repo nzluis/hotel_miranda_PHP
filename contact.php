@@ -1,5 +1,5 @@
 <?php
 require_once('config.php');
 
-echo $blade->run("contact"); 
+echo $blade->run("contact", array("title" => "Contact")); 
 ?>
