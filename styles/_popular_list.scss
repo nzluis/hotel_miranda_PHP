@@ -59,6 +59,13 @@
                     background-color: #E5E5E5;
                     background-size: cover;
 
+                    &.offer {
+                        img {
+                            width: 100%;
+                        }
+                        object-fit: contain;
+                    }
+
                     .image--left,
                     .image--right {
                         position: absolute;
