@@ -5,7 +5,7 @@
                 <h5>THE ULTIMATE LUXURY EXPERIENCE</h5>
                 <h1>The Perfect Base For You</h1>
                 <button>TAKE A TOUR</button>
-                <button>LEARN MORE</button>
+                <button class="learnMore">LEARN MORE</button>
             </div>
 
         </section>
