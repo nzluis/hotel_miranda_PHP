@@ -10,6 +10,7 @@
 
         <section class="rooms_grid">
             <div class="rooms_grid__wrapper">
+                @foreach($rooms as $room)
                 <div class="rooms_grid__wrapper__item">
                     <div class="item_slider"
                         style="background-image: url(../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg);">
@@ -27,62 +28,15 @@
                                 alt="drink icon">
                         </div>
                         <div class="item_description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
+                            <h4>{{$room['room_type']}}</h4>
+                            <p>{{substr($room['description'],0,75)}}</p>
+                            <h3>${{$room['price']}}/Night</h3>
                             <h6>Booking Now</h6>
                         </div>
                     </div>
                 </div>
-                <div class="rooms_grid__wrapper__item">
-                    <div class="item_slider"
-                        style="background-image: url(../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg);">
-                    </div>
-                    <div class="item_description">
-                        <div class="item_description__icons">
-                            <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
-                            <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
-                            <img src="../assets/car-front.svg" alt="car icon">
-                            <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-                                alt="ac icon">
-                            <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
-                            <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                            <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-                                alt="drink icon">
-                        </div>
-                        <div class="item_description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
-                            <h6>Booking Now</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="rooms_grid__wrapper__item">
-                    <div class="item_slider"
-                        style="background-image: url(../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg);">
-                    </div>
-                    <div class="item_description">
-                        <div class="item_description__icons">
-                            <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
-                            <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
-                            <img src="../assets/car-front.svg" alt="car icon">
-                            <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-                                alt="ac icon">
-                            <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
-                            <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                            <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-                                alt="drink icon">
-                        </div>
-                        <div class="item_description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
-                            <h6>Booking Now</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="rooms_grid__pagination">
+                @endforeach
+                <!-- <div class="rooms_grid__pagination">
                     <div class="left_arrow">
                         <img src="../assets/1031524_arrow_arrows_double arrow_doublechevronleft_left_icon (1) 1.svg"
                             alt="left arrow icon">
@@ -94,6 +48,6 @@
                         <img src="../assets/1031524_arrow_arrows_double arrow_doublechevronleft_left_icon (1) 1(1).svg"
                             alt="right arrow icon">
                     </div>
-                </div>
+                </div> -->
         </section>
 @stop
