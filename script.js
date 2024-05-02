@@ -4,9 +4,9 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView:1,
   speed: 1500,
-   autoplay: {
-   delay: 3000,
- },
+  autoplay: {
+  delay: 3000,
+},
 
   pagination: {
     el: '.swiper-pagination',
@@ -17,3 +17,9 @@ const swiper = new Swiper('.swiper', {
     }
   },
 });
+
+
+const learnMoreButton = document.querySelector('.learnMore')
+learnMoreButton.addEventListener('click', () => {
+  window.location.href='/about.php'
+})
