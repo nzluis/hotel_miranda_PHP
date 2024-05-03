@@ -1,10 +1,7 @@
 <?php
-
 require_once 'config.php';
-
-$getRooms = 'SELECT * FROM room';
-$rooms = $conn->query($getRooms);
-$rooms = $rooms->fetch_all(MYSQLI_ASSOC);
+require_once __DIR__ .'/queries/getRooms.php';
 $conn->close();
 
 echo $blade->run('rooms_grid', ['title' => 'Rooms', 'rooms' => $rooms]);
+?>
