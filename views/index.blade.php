@@ -68,30 +68,36 @@
         <section class="rooms">
             <h5>ROOMS</h5>
             <h1>Hand Picked Rooms</h1>
-            <div class="rooms__icons">
-                <img src="./assets/8725460_bed_icon 1.svg" alt="bed icon">
-                <img src="./assets/925808_wifi_icon 1.svg" alt="wif icon">
-                <img src="./assets/car-front.svg" alt="car icon">
-                <img src="./assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="ac icon">
-                <img src="./assets/9042522_gym_icon 1.svg" alt="gym icon">
-                <img src="./assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                <img src="./assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="drink icon">
-            </div>
-            <div class="rooms__slider"
-                style="background-image: url(./assets/roberto-nickson-emqnSQwQQDo-unsplash.jpg);">
-                <img class="rooms__slider--left" src="./assets/Left arrow.svg" alt="left arrow icon">
-                <img class="rooms__slider--right" src="./assets/Frame 60.svg" alt="right arrow icon">
-            </div>
-            <div class="rooms__description">
-                <div class="rooms__description__text">
-                    <h4>Minimal Duplex Room</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore.</p>
+                <div class="roomSwiper">
+                    <div class="swiper-wrapper">
+                        @foreach($rooms as $room)
+                            <div class="swiper-slide">
+                                <div class="rooms__icons">
+                                    <img src="./assets/8725460_bed_icon 1.svg" alt="bed icon">
+                                    <img src="./assets/925808_wifi_icon 1.svg" alt="wif icon">
+                                    <img src="./assets/car-front.svg" alt="car icon">
+                                    <img src="./assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg" alt="ac icon">
+                                    <img src="./assets/9042522_gym_icon 1.svg" alt="gym icon">
+                                    <img src="./assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
+                                    <img src="./assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg" alt="drink icon">
+                                </div>
+                                <img src="./assets/roberto-nickson-emqnSQwQQDo-unsplash.jpg" alt="" />
+                                <!-- <img class="rooms__slider--left" src="./assets/Left arrow.svg" alt="left arrow icon">
+                                <img class="rooms__slider--right" src="./assets/Frame 60.svg" alt="right arrow icon"> -->
+                                <div class="rooms__description">
+                                    <div class="rooms__description__text">
+                                        <h4>{{$room['room_type']}}</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et
+                                        dolore.</p>
+                                    </div>
+                                    <h3>${{$room['price']}}<span>/Night</span></h3>
+                                </div>
+                            </div>
+                        @endforeach    
+                    </div>
                 </div>
-                <h3>$345<span>/Night</span></h3>
-            </div>
         </section>
         <section class="intro_video">
             <div class="intro_video__container">

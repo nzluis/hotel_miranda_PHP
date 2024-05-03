@@ -19,6 +19,19 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+const roomSwiper = new Swiper('.roomSwiper', {
+  loop: true,
+  slidesPerView:1,
+  speed: 1500,
+  autoplay: {
+  delay: 3000,
+},
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
 const learnMoreButton = document.querySelector('.learnMore')
 learnMoreButton.addEventListener('click', () => {
   window.location.href='/about.php'

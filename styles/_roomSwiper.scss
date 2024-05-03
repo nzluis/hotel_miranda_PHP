@@ -1,0 +1,27 @@
+.roomSwiper {
+    @media only screen and (min-width: 1000px) {
+        margin: 0px auto;
+        width: calc(50% - 10px);
+        max-width: 1170px;
+    }
+    height: 650px;
+    .swiper-slide{
+        position: relative;
+        
+        .rooms__icons {
+            padding: 0 20px ;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -11px;
+        }
+        .rooms__description {
+            position: absolute;
+            width: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 53%;
+
+        }
+    }
+}
