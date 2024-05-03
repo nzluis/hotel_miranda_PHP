@@ -46,7 +46,7 @@
             <div class="popular_list__wrapper">
                 <h5>POPULAR LIST</h5>
                 <h1>Popular Rooms</h1>
-                @foreach($cheapestRooms as $room)
+                @foreach($popularRooms as $room)
                     <div class="popular_list__wrapper__container">
                         <div class="popular_list__wrapper__container__item">
                             <div class="popular_list__wrapper__container__item__slider offer">
