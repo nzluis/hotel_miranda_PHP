@@ -4,7 +4,7 @@
             <div class="header__container pages headerRooms">
                 <h5>THE ULTIMATE LUXURY</h5>
                 <h2>Room Details</h2>
-                <h6>Home&#160&#160|&#160&#160<span>Room Details</span></h6>
+                <h6>Home &nbsp | &nbsp<span>Room Details</span></h6>
             </div>
     </section>
     <section class="room_detail">
@@ -15,7 +15,7 @@
                         <h4>{{strtoupper($room['room_type'])}}</h4>
                         <h2>Luxury {{$room['room_type']}}</h2>
                     </div>
-                    <h5>${{$room['price']}} <span>/Night</span></h5>
+                    <h5>${{$room['price']}}<span>/Night</span></h5>
                     
                 </div>
                 <img src="../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg" alt="room">
@@ -60,7 +60,6 @@
                 <textarea placeholder="message..." name="message" id="message"></textarea>
             </form>
         </div>
-            
     </section>
     <section class="popular_list__room_detail">
         @foreach($popularRooms as $room)

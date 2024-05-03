@@ -4,7 +4,7 @@
             <div class="header__container pages">
                 <h5>THE ULTIMATE LUXURY</h5>
                 <h2>Our Offers</h2>
-                <h6>Home&#160&#160|&#160&#160<span>Offers</span></h6>
+                <h6>Home &nbsp | &nbsp<span>Offers</span></h6>
             </div>
         </section>
 

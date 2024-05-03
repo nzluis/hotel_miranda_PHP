@@ -4,10 +4,9 @@
             <div class="header__container pages headerRooms">
                 <h5>THE ULTIMATE LUXURY</h5>
                 <h2>Ultimate Room</h2>
-                <h6>Home&#160&#160|&#160&#160<span>Rooms</span></h6>
+                <h6>Home &nbsp | &nbsp <span>Rooms</span></h6>
             </div>
         </section>
-
         <section class="rooms_grid">
             <div class="rooms_grid__wrapper">
                 @foreach($rooms as $room)
@@ -31,7 +30,7 @@
                             <h4>{{$room['room_type']}}</h4>
                             <p>{{substr($room['description'],0,75)}}</p>
                             <h3>${{$room['price']}}/Night</h3>
-                            <h6>Booking Now</h6>
+                            <h6><a href="/room_detail.php?id=<?php $room['_ id']?>">Booking Now</a></h6>
                         </div>
                     </div>
                 </div>

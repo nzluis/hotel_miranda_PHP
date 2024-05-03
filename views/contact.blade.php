@@ -4,10 +4,9 @@
             <div class="header__container pages">
                 <h5>THE ULTIMATE LUXURY</h5>
                 <h2>New Details</h2>
-                <h6>Home&#160&#160|&#160&#160<span>Blog</span></h6>
+                <h6>Home &nbsp | &nbsp<span>Blog</span></h6>
             </div>
         </section>
-
         <section class="new_details">
             <div class="new_details__contact_info">
                 <div class="new_details__contact_info__card">

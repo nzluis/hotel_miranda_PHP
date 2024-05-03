@@ -7,7 +7,6 @@
                 <button>TAKE A TOUR</button>
                 <button class="learnMore">LEARN MORE</button>
             </div>
-
         </section>
         <section class="date_checker">
             <div class="date_checker__container">
