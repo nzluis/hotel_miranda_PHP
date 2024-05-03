@@ -12,15 +12,15 @@
             <div class="room_detail__left__photobox">
                 <div class="description">
                     <div class="description__title">
-                        <h4>ROOM TYPE</h4>
-                        <h2>Luxury ROOM TYPE</h2>
+                        <h4>{{strtoupper($room['room_type'])}}</h4>
+                        <h2>Luxury {{$room['room_type']}}</h2>
                     </div>
-                    <h5>$PRICE <span>/Night</span></h5>
+                    <h5>${{$room['price']}} <span>/Night</span></h5>
                     
                 </div>
                 <img src="../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg" alt="room">
             </div>
-            <p>DESCRIPTION</p>
+            <p>{{$room['description']}}</p>
             <h4>Amenities</h4>
             <ul>
                 <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" alt="icon" />Air
@@ -36,8 +36,8 @@
                 <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Single Bed</li>
                 <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Towels</li>
             </ul>
-            <h4>Cancellation    </h4>
-            <p>CANCELLATION</p>
+            <h4>Cancelation    </h4>
+            <p>{{$room['cancelation']}}</p>
             <h4>Related Rooms</h4>
         </div>
         <div class="room_detail__right">
@@ -63,82 +63,32 @@
             
     </section>
     <section class="popular_list__room_detail">
-        <div class="popular_list__wrapper__container">
+        @foreach($popularRooms as $room)
+            <div class="popular_list__wrapper__container">
                 <div class="popular_list__wrapper__container__item">
-                    <div class="popular_list__wrapper__container__item__slider">
-                        <img class="slider_image image--left" src="../assets/Left arrow.svg" alt="left arrow icon">
-                        <img class="slider_image image--right" src="../assets/Frame 60.svg" alt="right arrow icon">
+                    <div class="popular_list__wrapper__container__item__slider offer">
+                        <img src="../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg" alt="room">
                     </div>
                     <div class="popular_list__wrapper__container__item__description">
-                        <div class="popular_list__wrapper__container__item__description__icons">
-                            <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
-                            <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
-                            <img src="../assets/car-front.svg" alt="car icon">
-                            <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-                                alt="ac icon">
-                            <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
-                            <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                            <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-                                alt="drink icon">
-                        </div>
-                        <div class="popular_list__wrapper__container__item__description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
-                            <h6>Booking Now</h6>
-                        </div>
+                    <div class="popular_list__wrapper__container__item__description__icons">
+                        <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
+                        <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
+                        <img src="../assets/car-front.svg" alt="car icon">
+                        <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
+                            alt="ac icon">
+                        <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
+                        <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
+                        <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
+                            alt="drink icon">
                     </div>
-                </div>
-                <div class="popular_list__wrapper__container__item">
-                    <div class="popular_list__wrapper__container__item__slider">
-                        <img class="slider_image image--left" src="../assets/Left arrow.svg" alt="left arrow icon">
-                        <img class="slider_image image--right" src="../assets/Frame 60.svg" alt="right arrow icon">
-                    </div>
-                    <div class="popular_list__wrapper__container__item__description">
-                        <div class="popular_list__wrapper__container__item__description__icons">
-                            <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
-                            <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
-                            <img src="../assets/car-front.svg" alt="car icon">
-                            <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-                                alt="ac icon">
-                            <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
-                            <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                            <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-                                alt="drink icon">
-                        </div>
-                        <div class="popular_list__wrapper__container__item__description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
-                            <h6>Booking Now</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="popular_list__wrapper__container__item">
-                    <div class="popular_list__wrapper__container__item__slider">
-                        <img class="slider_image image--left" src="../assets/Left arrow.svg" alt="left arrow icon">
-                        <img class="slider_image image--right" src="../assets/Frame 60.svg" alt="right arrow icon">
-                    </div>
-                    <div class="popular_list__wrapper__container__item__description">
-                        <div class="popular_list__wrapper__container__item__description__icons">
-                            <img src="../assets/8725460_bed_icon 1.svg" alt="bed icon">
-                            <img src="../assets/925808_wifi_icon 1.svg" alt="wif icon">
-                            <img src="../assets/car-front.svg" alt="car icon">
-                            <img src="../assets/384878_cold_new year_snowflake_wheather_winter_icon 1.svg"
-                                alt="ac icon">
-                            <img src="../assets/9042522_gym_icon 1.svg" alt="gym icon">
-                            <img src="../assets/9081473_smoking_no_icon 1.svg" alt="smoke forbidden icon">
-                            <img src="../assets/6623006_cocktail_drink_holidays_summer_vacation_icon 1.svg"
-                                alt="drink icon">
-                        </div>
-                        <div class="popular_list__wrapper__container__item__description__text">
-                            <h4>Minimal Duplex Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <h3>$345/Night</h3>
-                            <h6>Booking Now</h6>
-                        </div>
+                    <div class="popular_list__wrapper__container__item__description__text">
+                        <h4>{{$room['room_type']}}</h4>
+                        <p>{{substr($room['description'], 0, 120)}}</p>
+                        <h3>{{$room['price']}}/Night</h3>
+                        <h6>Booking Now</h6>
                     </div>
                 </div>
             </div>
+        @endforeach
     </section>
 @stop
