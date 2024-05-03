@@ -1,5 +1,5 @@
 <?php
-require_once('config.php');
+require_once 'config.php';
 
-echo $blade->run("index", array("title" => "Home","name" => 'Luis'));
+echo $blade->run("index", array("title" => "Home"));
 ?>

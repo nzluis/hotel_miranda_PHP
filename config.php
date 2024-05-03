@@ -1,6 +1,5 @@
 <?php
-
-require_once('BladeOne.php');
+require_once 'BladeOne.php';
 
 use eftec\bladeone\BladeOne;
 

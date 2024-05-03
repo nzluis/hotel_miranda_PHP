@@ -30,7 +30,7 @@
                             <h4>{{$room['room_type']}}</h4>
                             <p>{{substr($room['description'],0,75)}}</p>
                             <h3>${{$room['price']}}/Night</h3>
-                            <h6><a href="/room_detail.php?id=<?php $room['_ id']?>">Booking Now</a></h6>
+                            <h6><a href="/room_detail.php?id={{$room['_id']}}">Booking Now</a></h6>
                         </div>
                     </div>
                 </div>
