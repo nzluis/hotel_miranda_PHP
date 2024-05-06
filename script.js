@@ -26,10 +26,6 @@ const roomSwiper = new Swiper('.roomSwiper', {
   autoplay: {
   delay: 3000,
 },
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
 });
 
 const learnMoreButton = document.querySelector('.learnMore')
