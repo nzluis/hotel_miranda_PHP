@@ -12,7 +12,7 @@
             <div class="room_detail__left__photobox">
                 <div class="description">
                     <div class="description__title">
-                        <h4>{{strtoupper($room['room_type'])}}</h4>
+                        <h3>{{strtoupper($room['room_type'])}}</h3>
                         <h2>Luxury {{$room['room_type']}}</h2>
                     </div>
                     <h5>${{$room['price']}}<span>/Night</span></h5>
@@ -21,43 +21,51 @@
                 <img src="../assets/sasha-kaunas-67-sOi7mVIk-unsplash.jpg" alt="room">
             </div>
             <p>{{$room['description']}}</p>
-            <h4>Amenities</h4>
-            <ul>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" alt="icon" />Air
-                    conditioner
-                </li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Breakfast</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Cleaning</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Grocery</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Shop near</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />High speed WiFi</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Kitchen</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Shower</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Single Bed</li>
-                <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Towels</li>
-            </ul>
-            <h4>Cancelation    </h4>
-            <p>{{$room['cancelation']}}</p>
+            <div class="amenities">
+                <h4>Amenities</h4>
+                <ul>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" alt="icon" />Air
+                        conditioner
+                    </li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Breakfast</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Cleaning</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Grocery</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Shop near</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />High speed WiFi</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Kitchen</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Shower</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Single Bed</li>
+                    <li><img src="../assets/svg-gobbler - 2022-03-03T180356.761 1.svg" />Towels</li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <h4>Cancelation</h4>
+                <p>{{$room['cancelation']}}</p>
+            </div>
             <h4>Related Rooms</h4>
         </div>
         <div class="room_detail__right">
+            <h3>Reservation</h3>
             <form action="#">
                 <label for="check_in">Check In
+                </label>
                     <input type="date" name="check_in" id="check_in">
-                </label>
                 <label for="check_out">Check Out
+                </label>
                     <input type="date" name="check_out" id="check_out">
-                </label>
                 <label for="full_name">Full Name
+                </label>
                     <input type="text" name="full_name" id="full_name">
-                </label>
                 <label for="email">Email
+                </label>
                     <input type="email" name="email" id="email">
-                </label>
                 <label for="phone">Phone
-                    <input type="number" name="phone" id="phone">
                 </label>
-                <textarea placeholder="message..." name="message" id="message"></textarea>
+                    <input type="number" name="phone" id="phone">
+                <label for="message">Message
+                </label>
+                <textarea name="message" id="message" rows="12"></textarea>
+                <button>Book</button>
             </form>
         </div>
     </section>
