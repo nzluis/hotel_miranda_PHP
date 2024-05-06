@@ -4,6 +4,7 @@
         width: calc(50% - 10px);
         max-width: 1170px;
     }
+    overflow: hidden;
     height: 650px;
     .swiper-slide{
         position: relative;
@@ -13,7 +14,6 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: -11px;
         }
         .rooms__description {
             position: absolute;
